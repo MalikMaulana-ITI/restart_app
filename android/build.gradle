@@ -35,6 +35,10 @@ android {
     }
 }
 
+if (project.android.hasProperty('namespace')) {
+    namespace 'gabrimatic.info.restart'
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
